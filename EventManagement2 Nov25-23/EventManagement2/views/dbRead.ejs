@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<title>Data Base</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="nav">
+				<a class="active"><a href=/ class="text-uppercase font-weight-bold">Home</a>
+				<a href= "gallery">Gallery</a>
+				<a href="services">Services</a>
+				<a href="Booking">Booking</a>
+				<a href="#">Login</a>
+				<a href="#">Contact Us</a>
+	</div>
+	
+	
+	<div id="divGet">
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Password</th>
+		</tr>
+		
+		<% if (newuserData.length !=0) {var i=1; newuserData.forEach( function(data) {
+		%>
+		<tr>
+			<td><%=data.id %></td>
+			<td><%=data.first_name %></td>
+			<td><%=data.last_name %></td>
+			<td><%=data.email_id %></td>
+			<td><%=data.password %></td>
+		</tr>
+		<% i++; }) %> <%}%>
+		
+	</table>
+	</div>
+
+</body>
+</html>

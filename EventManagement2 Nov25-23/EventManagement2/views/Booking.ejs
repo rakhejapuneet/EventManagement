@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+	body{
+	background-image: url('images/.jpg');
+	}
+	h1{
+		margin: 0;
+		padding: 0 0 20px;
+		text-align: center;
+	}
+	
+	</style>
+  </head>
+		<body>
+			
+				<div class="nav">
+				<a href= "userhome">Home</a>
+				<a href= "usergallery">Gallery</a>
+				<a href="userservices">Services</a>
+				<a href="Booking">Booking</a>
+				<a href="userlogin">Login</a>
+				<a href="userfeedback">Feedback</a>
+				<a href="login"class = "btnn" >Logout</a>
+				<h3><span>'User Login'</span></h3>
+				</div>
+				
+
+		<div class="container8">
+		<form action="/Booking" method="POST">
+		<h1>Booking Page</h1>
+		
+		<label for="name"><b>Name</b></label>
+		<input type="text" placeholder="Enter Name" name="name" required><br>
+
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required><br>
+		
+		<label for="date"><b>Event Date</b></label>
+		<input type="date" placeholder="Event Date" name="date" required><br>
+		
+		<label for="eventtype"><b>Event Type</b></label>
+		<select name ="eventtype" id= "eventtype">
+		  <option value="1">Kid's Birthday</option>
+		  <option value="2">Adult Birthday</option>
+		  <option value="3">Gender Reveal</option>
+		  <option value="4">Anniversary</option>
+		</select></br>
+		
+		<label for="address"><b>Address</b></label>
+		<input type="text" placeholder="Enter Address" name="address" required><br>
+
+		<label for="venue"><b>Venue</b></label>
+		<input type="text" placeholder="Enter Venue" name="venue" required><br>
+		
+		<label for="contactno"><b>Contact No</b></label>
+		<input type="tel" placeholder="0000000" name="contactno" required>
+			
+	    <br>
+		<br>	  	
+		<form action="">
+		<fieldset>
+		<legend>Catering Service:</legend>
+		<label for="cateringid">Menu No:</label>
+		<select name ="cateringid" id= "cateringid">
+		  <option value="1">Menu 01</option>
+		  <option value="2">Menu 02</option>
+		  <option value="3">Menu 03</option>
+		  <option value="4">Menu 04</option>
+		  <option value="5">Menu 05</option>
+		  <option value="6">Menu 06</option>
+		  <option value="7">Menu 07</option>
+		  <option value="8">Menu 08</option>
+		  <option value="9">Menu 09</option>
+		</select></br>
+		<label for="guests">No of Guests:</label>
+		<input type="text" id="guests" name="guests"><br><br>
+	    </fieldset>
+	    <br>
+	    <fieldset>
+		<legend>Cake Design:</legend>
+		<label for="cakeid">Cakes:</label>
+		<select name="cakeid" id="cakeid"><br><br>
+			<option value="1">Triple Chocolate Platform Cake</option>
+			<option value="2">Chocolate Jaffa Cake</option>
+			<option value="3">Hokey Pokey Chocolate Cake</option>
+			<option value="4">Fruitastic Cake</option>
+			<option value="5">Red Velvet Cake</option>
+			<option value="6">Banana Cake</option>
+			<option value="7">Classic Carrot Cake</option>
+			<option value="8">Strawberry Cake</option>
+			<option value="9">Princess Cake</option>
+			<option value="10">Berry Forest Cake</option>
+			<option value="11">Cookies and Cream Cake</option>
+			<option value="12">Lemon Menrigue Cake</option>
+		</select></br>	
+		<label for="cakedetailtypeid">Size of cake:</label>
+		<select name="cakedetailtypeid" id="cakedetailtypeid"><br><br>
+			<option value="1">6 inch</option>
+			<option value="2">8 inch</option>
+			<option value="3">10 inch</option>
+		</select><br>
+		<label for="textoncake">Text on the cake:</label>
+		<input type="text" id="textoncake" name="textoncake"><br><br>
+		</fieldset>
+		<br>
+		<fieldset>
+		<legend>Birthday Theme:</legend>
+		<label for="themeid">Theme Type:</label>
+		<select name="themeid" id="themeid"><br><br>
+			<option value="1">Animal Theme</option>
+			<option value="2">Alternative Animal Theme </option>
+			<option value="3">Farm Bird Theme</option>
+			<option value="4">Beach Theme</option>
+			<option value="5">Ariel Theme</option>
+			<option value="6">Disney Minnie Theme</option>
+			<option value="7">Spiderman Theme</option>
+			<option value="8">Soccer Theme</option>
+			<option value="9">Circus Theme</option>
+			<option value="10">Purple Theme</option>
+			<option value="11">Gold Theme</option>
+			<option value="12">Youthful Flower Theme</option>
+			<option value="13">Pink Theme</option>
+			<option value="14">Alternative Pink Theme</option>
+		
+	    </select></br>
+		</fieldset>	
+		<br>
+		<label for="message">Your Message</label>
+		<textarea id="message" name="message"
+        placeholder="Your message..." rows="8" style="width:100%"></textarea><br><br>
+		<div style="text-align:center">
+		<button type="submit">Submit</button>		
+		</div>
+		</form>
+
+	</form> 
+
+</div>
+ 
+<footer>
+	© 2023 Top Event Managers. All Rights Reserved.
+</footer>
+
+	</body>
+</html>

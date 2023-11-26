@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  </head>
+		<body>
+
+				<div class="nav">
+				<a href= "userhome">Home</a>
+				<a href= "usergallery">Gallery</a>
+				<a href= "userservices">Services</a>
+				<a href="Booking">Booking</a>
+				<a href="userfeedback">Feedback</a>
+				<a href="login"class = "btnn" >Logout</a>
+				<h3><span>'User Login'</span></h3>
+				</div>
+
+
+<div class="row">
+    <h class="feedback">Feedback Section</h>
+    <br>
+    <p class="feedback1">
+        <br>
+        Here at Lemongrass Productions, we want to ensure that every service for our client's event is a
+        major success and we are continously working hard to make that happen day in and day out. We would greatly
+        appreciate your feedback as it is a huge cog in the company gear to keep us spinning in the right direction and 
+        enhancing our services for future events.</p>
+        <hr>
+       <%=errormessage%>
+            <div class="form-floating2">
+                <form id = "feedback" action="/feedback" method="POST">
+                    <h1>Feedback Form</h1>
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="email" placeholder="Enter your email address" name="email" required>
+                    <hr><br>
+
+                    <h class="Taste">Taste of our food packages</h><br>
+                    <input type="radio" id="verysatisfied" name="taste" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="taste" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="taste" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="taste" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="taste" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Quality">Quality of our food packages</h><br>
+                    <input type="radio" id="verysatisfied" name="quality" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="quality" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="quality" value="3">
+                    <label for="Neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="quality" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="quality" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Booking">Ease of Booking</h><br>
+                    <input type="radio" id="verysatisfied" name="booking" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="booking" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="booking" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="booking" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="booking" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Value">Value for money</h><br>
+                    <input type="radio" id="verysatisfied" name="value" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="value" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="value" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="value" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="value" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Staff">Quality of service staff</h><br>
+                    <input type="radio" id="verysatisfied" name="staff" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="staff" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="staff" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="staff" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="staff" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Other">In addition to catering, if you chose our drinks and/or theme set
+                        up service, overall quality of our selected services? </h><br>
+                    <input type="radio" id="verysatisfied" name="services" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="services" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="services" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="services" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="services" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+
+                    <h class="Experience">Overall quality of experience for your catering</h><br>
+                    <input type="radio" id="verysatisfied" name="experience" value="1">
+                    <label for="verysatisfied">Very Satisfied</label>
+                    <input type="radio" id="satisfied" name="experience" value="2">
+                    <label for="satisfied">Satisfied</label>
+                    <input type="radio" id="neutral" name="experience" value="3">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="unsatisfied" name="experience" value="4">
+                    <label for="unsatisfied">Unsatisfied</label>
+                    <input type="radio" id="veryunsatisfied" name="experience" value="5">
+                    <label for="veryunsatisfied">Very Unsatisfied</label><br><br>
+                    <br>
+                    <br>
+                    <label for="suggestions">Do you have any suggestions on what we can do to provide
+                    you with a better service?</label><br><br>
+                    <textarea id="suggestions" name="suggestions"
+                        placeholder="Your suggestions.." rows="8" style="width:100%"></textarea><br><br>
+                    <div style="text-align:center">
+						<button type="submit">Submit</button>
+					</div>
+					
+                
+            </div>
+        </div>
+        </form>
+<br>
+
+<footer>
+	© 2023 Top Event Managers. All Rights Reserved.
+</footer>
+
+	</body>
+</html>
+

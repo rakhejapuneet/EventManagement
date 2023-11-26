@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questions and Queries</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+		<body>
+
+				<div class="nav">
+				<a href= "adminhome">Home</a>
+				<a href= "admingallery">Gallery</a>
+				<a href="adminservices">Services</a>
+				<a href="getbookings">Booking</a>
+				<a href="geteventusers">Users</a>
+				<a href="getfeedback">Feedback</a>
+				<a href="getqueries">Queries</a>
+				<a href="login"class = "btnn" >Logout</a>
+				<h3><span>'Admin Login'</span></h3>
+				</div>
+
+                <header>
+                    Questions and Queries
+            </header>       
+            
+                    <div id="divGet">
+                    <table>
+                           <tr>
+                                   <th class="queries1">ID</th>
+                                   <th class="queries1">First Name</th>
+                                   <th class="queries1">Last Name</th>
+                                   <th class="queries1">Email Address</th>
+                                   <th class="queries1">Contact Number</th>
+                                   <th class="queries1">Message</th>
+                                   <th class="queries1" class="table-danger">Edit</th>
+                                   <th class="queries1" class="table-info">Delete</th>
+                            </tr>      
+                            <% if (questionsData.length !=0) {var i=1; questionsData.forEach( function(data) {
+                             %>   
+                             <tr>
+                                    <td class="queries2"><%=data.id %></td>
+                                    <td class="queries2"><%=data.firstname %></td>
+                                    <td class="queries2"><%=data.lastname %></td>
+                                    <td class="queries2"><%=data.email %></td>
+                                    <td class="queries2"><%=data.contactno %></td>
+                                    <td class="queries2"><%=data.message %></td>
+                                    <td class="queries2"><a href="">Edit</a></td>
+                                    <td class="queries2"><button>Delete</button>></td>
+                              </tr>
+                              <% i++; }) %> <%}%>
+            
+                        </table>    
+                        </div>
+            
+    </body>
+</html>
