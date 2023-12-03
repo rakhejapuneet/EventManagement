@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+		<body>
+
+				<div class="nav">
+				<a class="active"><a href=/ class="text-uppercase font-weight-bold">Home</a>
+				<a href= "gallery">Gallery</a>
+				<a href="services">Services</a>
+				<a href="booknow">Booking</a>
+				<a href="login">Login</a>
+				<a href="contactus">Contact Us</a>
+				</div>           
+	
+	<div class="contactinformation">
+		<br><br>
+
+		<div class="containerone">
+			<div style="text-align:center">
+				<h7>Contact Us</h7>
+				<br><br>
+				<p2>Do you have any questions or queries you would like to ask us, we would love to assist you in your
+                grand celebration in anyway we can, with our lovely knowledgeable team always being surrounded in
+                the event environment, any burning questions or queries you have we are more than happy to answer.</p2> 
+                <p2>Feel free to drop a message down below or email us at admin0108774@hotmail.com.</p2>
+			</div>
+	
+				<%=errormessage%>
+				<div class="column8">
+					<form id = "loginform"action="/questions" method="POST">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+						<label type="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+						<label for="emailaddress">Email Address</label>
+						<input type="text" id="emailaddress" name="email" placeholder="Your email address.." required>
+						<label for="phonenumber">Phone Number</label>
+						<input type="text" id="contactno" name="contactno" placeholder="Your phone number.." required>
+						<label for="message">Message</label><br>
+						<textarea id="yourmessage" name="message" placeholder="Your message.."
+							rows="8" cols="38"></textarea>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+
+
+					</div>
+				</div>
+			</div>
+
+            <footer>
+                © 2023 Top Event Managers. All Rights Reserved.
+            </footer>
+
+        </body>
+</html>
