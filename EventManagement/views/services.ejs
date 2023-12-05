@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Services</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+		<body>
+
+				<div class="nav">
+				<a class="active"><a href=/ class="text-uppercase font-weight-bold">Home</a>
+				<a href="gallery">Gallery</a>
+				<a href="services">Services</a>
+				<a href="booknow">Booking</a>
+				<a href="login">Login</a>
+				<a href="contactus">Contact Us</a>
+				</div>
+
+			<div class="container">
+				<img src="images/ser.gif" width="100%" height="300px">
+				<div class="Corner">Our Services</div>
+				
+			</div>	
+			
+			<div class = "container4">
+			<div class = "gallery4">
+				<a href="/catering"><img src="images/catering.jpeg"></a>
+				<div class = "desc1">Catering Services</div>
+				
+			</div>
+			<div class = "gallery4">
+				<a href="/cakes"><img src = "images/cake2.jpg"></a>
+				<div class = "desc1">Cakes</div>
+			</div>
+			<div class = "gallery4">
+				<a href="/theme"><img src = "images/image26.jpg"></a>
+				<div class = "desc1">Birthday Theme</div>
+			</div>
+		</div>	
+
+			
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+				
+
+<footer>
+	© 2023 Top Event Managers. All Rights Reserved.
+</footer>
+
+	</body>
+</html>
